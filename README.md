@@ -4,7 +4,7 @@
 ## What's inside
 
 - Always up-to-date React Native and Expo SDK
-- Zustand and React Quey for state management
+- Zustand and React query for state management
 - React Navigation for simple navigation
 
 
@@ -20,7 +20,8 @@ Install the below tools/packages
 | 3           | react-native       | >= 0.73.2 | [Install react-native](https://www.npmjs.com/package/react-native) |
 | 4           | Expo SDK               | >= ~50.0.5 | [Install Expo](https://www.npmjs.com/package/exp) |
 | 5          | react               | >= 18.2.0 | [Install React](https://react.dev/learn/installation) |
-
+| 6         | Zustand              | >= 18.2.0 | [Install Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) |
+| 7          |  React Query              | >= 18.2.0 | [Install React-query](https://tanstack.com/query/v3/) |
 
 ### Setup Instructions
 

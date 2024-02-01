@@ -6,22 +6,47 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "expo": "~50.0.5",
+    "@tanstack/react-query": "^5.18.0",
+    "axios": "^1.6.7",
+    "expo": "^49.0.22",
     "expo-status-bar": "~1.11.1",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-native": "0.73.2",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^3.3.2",
+    "zustand": "^4.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/expo": "^33.0.1",
     "@types/react": "^18.2.50",
     "@types/react-native": "^0.73.0",
-    "typescript": "^5.3.3"
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-storybook": "^0.6.14",
+    "husky": "^8.0.3",
+    "prettier": "3.0.3",
+    "typescript": "^5.3.3",
+    "lint-staged": "^14.0.1"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,jsx,tsx}": [
+      "npx eslint",
+      "npx prettier --write"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "prettier"
+    ]
   },
   "private": true
 }
